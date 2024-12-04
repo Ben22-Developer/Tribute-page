@@ -1,56 +1,45 @@
-/*Let's style our HTML now*/
-
-/*This universal selector's propeties are applied to all HTML elements*/
-
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     background-color: rgba(145, 120, 120, 0.959);
     max-width: 100%;
+    line-height: 1.7rem;
+    scroll-behavior: smooth;
 }
-
+img {
+    width:100%;
+    height: 100%;
+}
 /*The following part styles the header in addition with it's components (Top elements) by using ID selectors*/
-
 header {
-    width: 100vw;
-    position:relative;
-    top:0;
-    height: auto;
-    background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
+    height:max-content;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-right: 20px;
-    gap: 10px;
+    position: sticky;
+    top:.5rem;
+    div {
+        width:5rem;
+        height:3rem;
+    }
+    nav {
+        background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
+        flex-grow: 1;
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:1.5rem;
+        padding: 0 2rem;
+        overflow-x: auto;
+        a {
+            background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
+            flex-shrink:0;
+            padding: .6rem;
+            color:black;
+            text-decoration: none;
+        }
+    }
 }
-
-/*Top element #African-logo*/
-
-#logo {
-    border-radius: 50%;
-    min-width: 7%;
-    max-height: 65px;
-}
-
-/*Top element,h1 element in the header*/
-
-header h1 {
-    font-size: 25px;
-    background: linear-gradient( rgb(26, 0, 0),rgb(46, 2, 2),rgb(50, 1, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/*Top element,p element in the header*/
-
-header p {
-    font-weight: bold;
-    background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
-}
-
 /*This is the style of the page's main title*/
-
 #title {
     margin-top: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -61,9 +50,7 @@ header p {
     -webkit-text-fill-color: transparent;
     text-shadow: 12px -4px 25px rgb(29, 2, 2); 
 }
-
 /*This is a style of the top description of the page which appears after the title*/
-
 #tribute-info {
     letter-spacing: 1px;
     font-size: 20px;
@@ -74,10 +61,8 @@ header p {
     -webkit-text-fill-color: transparent;
     text-shadow: 12px -4px 25px rgb(93, 13, 13); 
 }
-
 /*This is a style of container of the container of the image
 (For making the image look like it's padding one in order to maintain the background color)*/
-
 .container-image {
     height: auto;
     width: 100%;
@@ -85,18 +70,14 @@ header p {
     background: linear-gradient( rgba(45, 1, 1, 0.986),rgb(118, 18, 18),rgba(108, 11, 11, 0.356));
     border-radius: 25px;
 }
-
 /*This is the real container of the main page image style*/
-
 #img-div {
     height: auto;
     width: 70%;
     margin:auto;
     background: linear-gradient( rgba(45, 1, 1, 0.986),rgb(107, 28, 28),rgba(139, 13, 13, 0));
 }
-
 /*Here is the main page image style*/
-
 #image {
     display: block;
     height: auto;
@@ -104,18 +85,14 @@ header p {
     max-width: 100%;
     margin: auto;
 }
-
 /*Here is the main page image description*/
-
 #img-caption {
     text-align: center;  
     background: linear-gradient( rgb(26, 0, 0),rgb(46, 2, 2),rgb(50, 1, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
 /*Here is the style of quote of Nelson Mandela*/
-
 #quote {
     margin: 0 auto 0 auto;
     padding: 0 15px 0 15px;
@@ -124,7 +101,6 @@ header p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
 /*The 4 following styles are the styles of the village in which Nelson Mandela bornt from*/
 /*This is the flex container*/
 #img-div2 {
@@ -136,27 +112,21 @@ header p {
     align-items: center;
     gap: 10px;
 }
-
 /*Here it's the first image of Nelson's village*/
-
 #birth-image1 {
     width: 500px;
     height: auto;
     max-width: 100%;
     object-fit: cover;
 }
-
 /*Here it's the second image of Nelson's village*/
-
 #birth-image2 {
     width: 500px;
     max-width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 /*Here it's the image description of Nelson's village*/
-
 #img-caption1 {
     letter-spacing: 1px;
     margin:auto;
@@ -164,7 +134,6 @@ header p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
 /*Styles of section-2 which decribes in summary Nelson Mandela's life*/
 /*The whole section is in a flex box to make effective the behaviour of the elements*/
 #section-2 {
@@ -173,16 +142,13 @@ header p {
     justify-content: center;
     align-items: center;
 }
-
 /*This is a title of section-2*/
-
 #section-2  h2 {
     font-size: 35px;
     background: linear-gradient( rgb(26, 0, 0),rgb(46, 2, 2),rgb(50, 1, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
 /*The following 2 functions are personal data of Nelson Mandela*/
 /*Example: (Full name) == Personal data*/
 .personal-data {
@@ -195,9 +161,7 @@ header p {
     font-weight: bold;
     display:inline;
 }
-
 /*Example: (Nelson Madiba Mandela) == data-in-details*/
-
 .data-in-details {
     width: 700px;
     max-width: 100%;
@@ -207,9 +171,7 @@ header p {
     -webkit-text-fill-color: transparent;
     display:inline; 
 }
-
 /*This is the list describing the diffrent years of Nelson Mandela that we covered about in this tribute page*/
-
 li {
     font-size: 25px;
     list-style:inside;
@@ -218,9 +180,7 @@ li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 /*This is the flexbox which contains images in each stage of year which is described in this Nelson Mandela's biography summary*/
-
 .images-2 {
     display: flex;
     flex-wrap: wrap;
@@ -228,50 +188,33 @@ li {
     align-items: flex-start;
     gap: 30px;
 }
-
 /*This function presents all the images which are used in the description of Nelson Mandela's biography summary*/
-
 .images {
     width: 300px;
     height: auto;
     max-width: 100%;
     object-fit: cover;
 }
-
 /*This presents all the descriptions used while describing the pictures which were used in Nelson Mandela's biography summary*/
-
 .image-caption1 {
     max-width: 400px; 
     background: linear-gradient( rgb(26, 0, 0),rgb(46, 2, 2),rgb(50, 1, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 /*This is about the button to tap in order to get to the top of the page*/
-
 .Top {
     text-align: center;
 }
-
-/*The rest of the functions styles the anchor HTML elements*/
-
 a {
+    color:black;
     text-decoration: none;
-    background: linear-gradient( rgb(26, 0, 0),rgb(46, 2, 2),rgb(50, 1, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    scroll-behavior: smooth;
 }
-
 a:hover {
     border: 1px solid black;
-    color: whitesmoke;
     padding: 7px;
-    scroll-behavior: smooth;
 }
-
 a:active {
     border: 3px solid black;
     padding: 7px;
-    scroll-behavior: smooth;
 }
