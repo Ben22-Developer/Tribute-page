@@ -41,9 +41,8 @@ header {
 }
 /*This is the style of the page's main title*/
 #title {
-    margin-top: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     background: linear-gradient( rgb(26, 0, 0),rgb(46, 2, 2),rgb(50, 1, 1));
     -webkit-background-clip: text;
