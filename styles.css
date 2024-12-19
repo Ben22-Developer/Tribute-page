@@ -19,13 +19,14 @@ header {
     div {
         width:5rem;
         height:3rem;
+        flex-shrink: 0;
     }
     nav {
         background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
-        flex-grow: 1;
+        flex-shrink:0;
         width: max-content;
         display: flex;
-        justify-content: space-between;
+        justify-content:;
         align-items: center;
         gap:1.5rem;
         padding: 0 2rem;
