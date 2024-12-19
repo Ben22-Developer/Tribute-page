@@ -24,12 +24,10 @@ header {
     nav {
         background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
         flex-shrink:0;
-        width: max-content;
+        width: 90%;
         display: flex;
-        justify-content:;
+        justify-content:space-between;
         align-items: center;
-        gap:1.5rem;
-        padding: 0 2rem;
         overflow-x: auto;
         a {
             background: linear-gradient(rgb(97, 70, 70),rgb(79, 77, 77));
